@@ -44,9 +44,11 @@ class Game {
   }
 
   startEntities() {
-
+    this.ally = new allyEntity('#292D3E');
+    this.ally.x = this.canvas.width / 2 - this.ally.width / 2;
+    this.ally.y = (this.canvas.height - (this.ally.height * 1.5));
+    this.entitiesList.push(this.ally);
   }
-
   
 }
 
